@@ -88,12 +88,6 @@ require dirname + '/rbPlainCFPropertyList.rb'
 
 require 'iconv' unless "".respond_to?("encode")
 
-# ensure that the module and class exist
-module Enumerable
-  class Enumerator
-  end
-end
-
 begin
   require dirname + '/rbLibXMLParser.rb'
   temp = LibXML::XML::Parser::Options::NOBLANKS # check if we have a version with parser options
